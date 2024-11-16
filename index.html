@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">ExamPrep</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Past Papers</a></li>
+                <li><a href="#">Mock Tests</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="profile-icon">
+            <img src="profile.png" alt="Profile Icon">
+            <div class="dropdown">
+                <button class="dropbtn">[User Name]</button>
+                <div class="dropdown-content">
+                    <a href="#">Profile Settings</a>
+                    <a href="#">Notifications</a>
+                    <a href="#">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search resources...">
+    </div>
+
+    <!-- Main Dashboard Panel -->
+    <main>
+        <section class="welcome-section">
+            <h2>Welcome back, [User Name]!</h2>
+        </section>
+
+        <section class="exam-countdown">
+            <h3>Upcoming Exams</h3>
+            <div class="exam-card red-border">Maths: 6 days left</div>
+            <div class="exam-card yellow-border">Science: 10 days left</div>
+            <div class="exam-card green-border">History: 20 days left</div>
+        </section>
+
+        <section class="quick-links">
+            <h3>Quick Links</h3>
+            <div class="quick-link-card"><a href="#">Past Papers</a></div>
+            <div class="quick-link-card"><a href="#">Mock Tests</a></div>
+            <div class="quick-link-card"><a href="#">Progress Report</a></div>
+        </section>
+
+        <section class="progress-tracker">
+            <h3>Progress Tracker</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;">70% Complete</div>
+            </div>
+            <div class="weekly-update">
+                <h4>Weekly Performance</h4>
+                <p>Completed: 4 mock tests, 5 papers reviewed</p>
+            </div>
+        </section>
+
+        <section class="goal-setting">
+            <h3>Set Your Goals</h3>
+            <form>
+                <label for="goal">Goal:</label>
+                <input type="text" id="goal" name="goal">
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline" name="deadline">
+                <button type="submit">Save Goal</button>
+            </form>
+        </section>
+
+        <section class="motivation-resource">
+            <h3>Motivation & Resources</h3>
+            <blockquote>“Success is the sum of small efforts, repeated day in and day out.”</blockquote>
+            <h4>Featured Resource</h4>
+            <p>Check out our guide on effective study habits!</p>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/example" frameborder="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 ExamPrep. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Sitemap</a> | 
+            <a href="#">Terms & Conditions</a> | 
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="newsletter-signup">
+            <label for="newsletter">Sign up for our newsletter:</label>
+            <input type="email" id="newsletter" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+    </footer>
+</body>
+</html>
